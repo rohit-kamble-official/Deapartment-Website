@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Placements | EE Department</title>
+  <link rel="stylesheet" href="placements.css" />
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+  <img src="images/logo.png" alt="College Logo" />
+</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About US.html">About</a></li>
+      <li><a href="Faculty.html">Faculty</a></li>
+      <li><a href="Labs.html">Labs</a></li>
+      <li><a href="Achievements.html">Achievements</a></li>
+      <li><a href="Placements.html">Placements</a></li>
+      <li><a href="Professional body.html">Professional Body</a></li>
+      <li><a href="Forum.html">Forum</a></li>
+
+
+
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Placement Section -->
+<section class="placement-section" id="placements">
+  <h2>Placement Overview</h2>
+  <p class="intro">
+    We take pride in the excellent placement opportunities provided to our students. Our department maintains strong connections with top companies across various sectors.
+  </p>
+
+  <div class="stats-grid">
+    <div class="stat-box">
+      <h3 class="counter" data-target="92">0%</h3>
+      <p>Placement Rate</p>
+    </div>
+    <div class="stat-box">
+      <h3 class="counter" data-target="50">50+</h3>
+      <p>Recruiting Companies</p>
+    </div>
+    <div class="stat-box">
+      <h3 class="counter" data-target="8.4">₹0 LPA</h3>
+      <p>Highest Package</p>
+    </div>
+    <div class="stat-box">
+      <h3 class="counter" data-target="4.2">₹0 LPA</h3>
+      <p>Average Package</p>
+    </div>
+  </div>
+</section>
+
+ <section class="recruiters-section">
+    <h2>Top Recruiters</h2>
+    <div class="recruiters-slider">
+      <img src="images/infosys.png" alt="Company 1" />
+      <img src="images/HCL_Technologies-Logo.wine.svg" alt="Company 2" />
+      <img src="images/Perficient-Logo-HorzJPG.jpg" alt="Company 3" />
+      <img src="images/mahavitaran-mseb-msedcl-logo-png_seeklogo-433116.png" alt="Company 4" />
+      <img src="images/laxmi 123.jpg" alt="Company 5" />
+      <img src="images/jayaswal.png" alt="Company 1" />
+      <img src="images/wipro.png" alt="Company 2" />
+      <img src="images/tata power.png" alt="Company 3" />
+      <img src="images/TCS.jpg" alt="Company 4" />
+      <img src="images/saurabh_engineering_services___india_logo.jpeg" alt="Company 5" />
+
+      <!--  Reapeat -->
+<img src="images/infosys.png" alt="Company 1" />
+      <img src="images/HCL_Technologies-Logo.wine.svg" alt="Company 2" />
+      <img src="images/Perficient-Logo-HorzJPG.jpg" alt="Company 3" />
+      <img src="images/mahavitaran-mseb-msedcl-logo-png_seeklogo-433116.png" alt="Company 4" />
+      <img src="images/laxmi 123.jpg" alt="Company 5" />
+      <img src="images/jayaswal.png" alt="Company 1" />
+      <img src="images/wipro.png" alt="Company 2" />
+      <img src="images/tata power.png" alt="Company 3" />
+      <img src="images/TCS.jpg" alt="Company 4" />
+      <img src="images/saurabh_engineering_services___india_logo.jpeg" alt="Company 5" />
+
+    </div>
+  </section>
+
+  <section class="placement-section-1">
+    <!-- <h2>PLACEMENT - 2022</h2> -->
+    <div class="carousel-wrapper">
+      <button class="arrow left" onclick="scrollCarousel(-1)">&#10094;</button>
+
+      <div class="carousel" id="placementCarousel">
+        <!-- Company Group -->
+        <div class="company-group">
+          <div class="card-container">
+            <div class="card"><img src="images/🚀 S.B. Jain Institute Shines Again_ 🚀__Our brilliant students have secured placements in Mycaptain and Saurabh Engineering Services🌟_A proud momen_1.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <!-- Add more groups like Zensoft, Quest Global, etc. -->
+        <div class="company-group">
+          <div class="card-container">
+            <div class="card"><img src="images/🚀 S.B. Jain Institute Shines Again_ 🚀__Our brilliant students have secured placements in Mycaptain and Saurabh Engineering Services🌟_A proud momen_2.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="company-group">
+          <div class="card-container">
+            <div class="card"><img src="images/Placement-Brochure_Final_page-0028-1396x1920.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="company-group">
+          <div class="card-container">
+            <div class="card"><img src="images/Placement-Brochure_Final_page-0030-1396x1920.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <div class="company-group">
+          <div class="card-container">
+            <div class="card"><img src="images/Placement-Brochure_Final_page-0031-1396x1920.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <!-- Add more sets below similarly -->
+
+      </div>
+
+      <button class="arrow right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </section>
+
+
+<!-- Counter Animation Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-target");
+        let count = +counter.innerText.replace(/[^0-9.]/g, '');
+        const speed = 80;
+        const increment = target / speed;
+
+        if (count < target) {
+          count += increment;
+          counter.innerText = counter.innerText.includes("₹") ? `₹${count.toFixed(1)} LPA` :
+                              counter.innerText.includes("%") ? `${Math.floor(count)}%` :
+                              `${Math.floor(count)}+`;
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = counter.innerText.includes("₹") ? `₹${target} LPA` :
+                              counter.innerText.includes("%") ? `${target}%` :
+                              `${target}+`;
+        }
+      };
+      updateCount();
+    });
+  });
+// bannner 
+    let scrollIndex = 0;
+
+    function scrollCarousel(direction) {
+      const carousel = document.getElementById('placementCarousel');
+      const groups = carousel.querySelectorAll('.company-group');
+      const total = groups.length;
+
+      scrollIndex += direction;
+      if (scrollIndex < 0) scrollIndex = total - 1;
+      if (scrollIndex >= total) scrollIndex = 0;
+
+      carousel.scrollTo({
+        left: groups[scrollIndex].offsetLeft,
+        behavior: 'smooth'
+      });
+    }
+
+</script>
+
+<!-- Modern Minimal Footer -->
+<footer class="alt-footer">
+  <div class="alt-footer-container">
+    <div class="alt-footer-row">
+      <div class="alt-footer-col">
+        <h3>S.B. Jain Institute</h3>
+        <p>Empowering innovation through research and technology.</p>
+      </div>
+
+      <div class="alt-footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faculty">Faculty</a></li>
+          <li><a href="#labs">Labs</a></li>
+          <li><a href="#placements">Placements</a></li>
+        </ul>
+      </div>
+
+      <div class="alt-footer-col">
+        <h4>Contact</h4>
+        <p>Email: info@sbjit.edu.in</p>
+        <p>Phone: +91 712 2667777</p>
+        <p>Address: Yerla, Kalmeshwar Road, Nagpur 441501</p>
+      </div>
+    </div>
+
+    <div class="alt-footer-bottom">
+      <p>© 2025 Rohit Kamble & Harshali Kathole </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
